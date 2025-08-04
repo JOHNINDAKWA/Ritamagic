@@ -152,13 +152,8 @@ const App = () => {
       ctx.fillText(locationText2, textX, textY + titleFontSize + bodyFontSize + 5);
       ctx.fillText(locationText3, textX, textY + titleFontSize + bodyFontSize * 2 + 10);
 
-      const latPrefix = -1.2734;
-      const longPrefix = 36.7700;
-      const latDecimal = (Math.random() * 0.0099).toFixed(4);
-      const longDecimal = (Math.random() * 0.0099).toFixed(4);
-
-      const latitude = (latPrefix + parseFloat(latDecimal)).toFixed(6);
-      const longitude = (longPrefix + parseFloat(longDecimal)).toFixed(6);
+      const latitude = `-1.2799${Math.floor(Math.random() * 100).toString().padStart(2, '0')}`;
+      const longitude = `36.7700${Math.floor(Math.random() * 100).toString().padStart(2, '0')}`;
       const latLongText = `Lat ${latitude}° Long ${longitude}°`;
       ctx.fillText(latLongText, textX, textY + titleFontSize + bodyFontSize * 3 + 15);
 
