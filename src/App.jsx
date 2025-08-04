@@ -265,7 +265,7 @@ const App = () => {
     if (finalImageURL) {
       const link = document.createElement("a");
       link.href = finalImageURL;
-      link.download = `edited_image_${Date.now()}.jpg`;
+      link.download = `image_${Date.now()}.jpg`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
