@@ -118,7 +118,7 @@ const App = () => {
       ctx.drawImage(userImg, srcX, srcY, srcW, srcH, 0, 0, targetWidth, targetHeight);
 
       const overlayBgColor = "#5d5d5b";
-      const marginBottom = targetHeight * 0.03;
+      const marginBottom = targetHeight * 0.01;
       const boxHeight = targetHeight * 0.165;
       const boxY = targetHeight - boxHeight - marginBottom;
 
